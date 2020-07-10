@@ -96,6 +96,9 @@ public class themFragment extends Fragment {
                 info = new info(edtngay.getText().toString(), spinner.getSelectedItem().toString(),
                         edtmua.getText().toString(),edtban.getText().toString());
                 controller.addinfo(info);
+                edtngay.setText("");
+                edtban.setText("");
+                edtmua.setText("");
             }
         });
 
